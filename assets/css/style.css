@@ -216,7 +216,7 @@ nav .menu-button i {
     background-size: cover;
     max-width: 100%;
     height: 80vh;
-    -webkit-mask-image: linear-gradient(to top, transparent 13%, black 25%);
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 25%);
     padding: 5rem 2rem 10rem 2rem;
     display: flex;
     flex-direction: row;
@@ -252,7 +252,7 @@ nav .menu-button i {
     flex-direction: column;
     justify-content: space-around;
     background: #130001ab;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     border-radius: 5px;
     margin: 20px;
     width:82%;
@@ -263,6 +263,13 @@ nav .menu-button i {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 0.7rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-image: url(/assets/img/campo-futebol.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    
 }
 
 .box-jogo .titulo-widget {
@@ -272,7 +279,7 @@ nav .menu-button i {
 }
 
 .jogo .versus {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: var(--corterciaria);
 }
 
