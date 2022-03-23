@@ -64,12 +64,19 @@ header .header-topo {
     list-style: none;
     flex-direction: row;
     align-items: center;
+    
 }
 
 .redes-sociais ul i {
     color: var(--corterciaria);
     margin-right: 30px;
     font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+.redes-sociais ul i:hover {
+    transform: scale(0.98);
+    color: var(--corsecundaria);
 }
 
 header .hr {
@@ -109,6 +116,12 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+nav ul li a:hover {
+    transform: scale(1.70);
+    transition: all 0.3s ease;
+    color: var(--corprimaria);
+    font-weight: 700;
+}
 nav .menu-btn i {
     color: var(--corterciaria);
     font-size: 22px;
@@ -183,3 +196,77 @@ nav .menu-btn i {
 
 /* Sessão Principal */
 
+.principal {
+    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)100%), url(/assets/img/bg-arena-pe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, black 50%);
+    padding: 1rem 2rem 17rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-esquerdo img{
+    max-width: 80%;
+}
+
+.container-central .separador-principal {
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.479)
+}
+
+.container-direito {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.jogador {
+    max-height: 450px;
+}
+
+.jogos {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-direito .box-jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #130001ab;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.box-jogo .jogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-jogo .titulo-widget {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--corterciaria);
+}
+
+.jogo .versus {
+    font-size: 3.5rem;
+    color: var(--corterciaria);
+}
+
+.jogo img {
+    width: 20%;
+}
+
+.box-jogo .info-jogo {
+    font-size: 1em;
+    color: var(--corterciaria);
+}
