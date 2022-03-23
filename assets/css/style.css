@@ -25,7 +25,7 @@ body {
 
 
 header .header-topo {
-    background-image: url(/assets/img/bg-redtexture.png);
+    background-image: url(/assets/img/bg-blacktexture.png);
     width: 100%;
     height: 80px;
     padding: 3px 50px;
@@ -59,12 +59,18 @@ header .header-topo {
     margin-left: 13px;
 }
 
+.socio-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .redes-sociais ul {
     display: flex;
     list-style: none;
     flex-direction: row;
     align-items: center;
-    
+    margin-left: 30px;
 }
 
 .redes-sociais ul i {
@@ -76,7 +82,7 @@ header .header-topo {
 
 .redes-sociais ul i:hover {
     transform: scale(0.98);
-    color: var(--corsecundaria);
+    color: var(--corprimaria);
 }
 
 header .hr {
@@ -86,13 +92,14 @@ header .hr {
 }
 
 nav {
-    background-image: url(/assets/img/bg-blacktexture.png);
+    background-image: url(/assets/img/bg-redtexture.png);
     position: relative;
     display: flex;
-    height: 65px;
+    height: 50px;
     width: 100%;
     justify-content: center;
     padding: 0 50px;
+    align-items: center;
 }
 
 nav ul {
@@ -119,14 +126,20 @@ nav ul li a {
 nav ul li a:hover {
     transform: scale(1.70);
     transition: all 0.3s ease;
-    color: var(--corprimaria);
+    color: var(--corsecundaria);
     font-weight: 700;
 }
-nav .menu-btn i {
+
+nav .menu-button {
+    align-items: center;
+    display: none;
+}
+
+nav .menu-button i {
     color: var(--corterciaria);
     font-size: 22px;
     cursor: pointer;
-    display: none;
+    align-items: center;
 }
 
 #click {
@@ -202,9 +215,9 @@ nav .menu-btn i {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-    height: 100vh;
-    -webkit-mask-image: linear-gradient(to top, transparent 10%, black 50%);
-    padding: 1rem 2rem 17rem 2rem;
+    height: 80vh;
+    -webkit-mask-image: linear-gradient(to top, transparent 13%, black 25%);
+    padding: 5rem 2rem 10rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -241,7 +254,8 @@ nav .menu-btn i {
     background: #130001ab;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 5px;
-    margin: 30px;
+    margin: 20px;
+    width:82%;
 }
 
 .box-jogo .jogo {
