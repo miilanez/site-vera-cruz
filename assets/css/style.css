@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    /* declarando variáveis para uso posterior*/
+    --corprimaria: #5F0004;
+    --corsecundaria: #222;
+    --corterciaria: white;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: var(--corprimaria);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header / Nav-Menu */
+
+
+header .header-topo {
+    background-image: url(/assets/img/bg-redtexture.png);
+    width: 100%;
+    height: 80px;
+    padding: 3px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-topo .logo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-topo .logo img {
+    height: 65px;
+}
+
+.header-topo .logo-nome a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-topo .logo a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: var(--corterciaria);
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 13px;
+}
+
+.redes-sociais ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+.redes-sociais ul i {
+    color: var(--corterciaria);
+    margin-right: 30px;
+    font-size: 1.5em;
+}
+
+header .hr {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.76);
+}
+
+nav {
+    background-image: url(/assets/img/bg-blacktexture.png);
+    position: relative;
+    display: flex;
+    height: 65px;
+    width: 100%;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--corterciaria);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    position: relative;
+    color: var(--corterciaria);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .menu-btn i {
+    color: var(--corterciaria);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+/* Estilos para todas as Sessões */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flex-text-center {
+    text-align: center;
+}
+  
+.sessao {
+    position: relative;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 2rem 2rem; /* 6rem 2rem 2rem */
+}
+  
+.sub-sessao {
+    position: relative;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 0;
+}
+  
+.titulo-sessao-01 {
+    
+    font-size: 4.5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, #fbfcfb 70% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+}
+  
+.titulo-sessao-02 {
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translateY(-80px);
+    color: #bedfbe;
+}
+  
+.titulo-sessao-02::before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: #AEE637;
+}
+  
+.container{
+    position: relative;
+    flex-direction: column;
+}
+
+/* Sessão Principal */
+
