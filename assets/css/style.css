@@ -178,27 +178,7 @@ nav .menu-button i {
     font-size: 4.5em;
     font-weight: 800;
     margin-bottom: 2rem;
-    background: linear-gradient(to top, transparent 0%, #fbfcfb 70% );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: .1;
-}
-  
-.titulo-sessao-02 {
-    font-size: 2.5em;
-    font-weight: 700;
-    transform: translateY(-80px);
-    color: #bedfbe;
-}
-  
-.titulo-sessao-02::before {
-    content: '';
-    position: absolute;
-    width: 85px;
-    height: 5px;
-    right: 0;
-    bottom: 0;
-    background: #AEE637;
+    color: var(--corterciaria);
 }
   
 .container{
@@ -312,6 +292,39 @@ nav .menu-button i {
 /* Loja */
 
 /* Elenco */
+
+#elenco {
+    
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.swiper {
+    width: 90%;
+    height: 100%;
+}
+
+.swiper-slide {
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+    background-color:#130001ab;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+
+    color: var(--corterciaria);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
 /* Footer */
 
