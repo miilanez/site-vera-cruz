@@ -15,3 +15,27 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+// Sessão de Notícias - Modal //
+
+const noticiaModals = document.querySelectorAll(".noticia-modal");
+const leiaMaisBotaos = document.querySelectorAll(".botao-leia-mais");
+const modalCLoseBotaos = document.querySelectorAll(".modal-close-btn");
+
+var modal = function(modalClick){
+    noticiaModals[modalClick].classList.add("active");
+}
+
+leiaMaisBotaos.forEach((leiaMaisBotao, i) => {
+    leiaMaisBotao.addEventListener("click", () => {
+        modal(i);
+    });
+})
+
+modalCLoseBotaos.forEach((modalCLoseBotao) => {
+    modalCLoseBotao.addEventListener("click", () => {
+        noticiaModals.forEach((modalView) => {
+            modalView.classList.remove("active");
+        })
+    })
+})
