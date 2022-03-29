@@ -290,6 +290,74 @@ nav .menu-button i {
 /* Jogos */
 
 /* Loja */
+#loja-virtual {
+    background-color: #000000;
+    background-image: url(/assets/img/bg-blacktexture.png);
+    background-position: center;
+    max-width: 100%;
+}
+
+.loja .container .conteudo {
+    width: 100%;
+}
+
+.lista-de-itens {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    list-style: none;
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--corterciaria);
+    border-bottom: 3px solid var(--corprimaria);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: #000000;
+    min-height: 345px;
+}
+/* .item-card img {
+    height: 100%;
+    width: 100%;
+}*/
+
+.item-card > img {
+    max-width: 100%;
+}
+
+.item-card h3 {
+    font-size: 1em;
+}
+
+.item-card h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.botao-comprar button{
+  color: var(--corprimaria);
+  font-weight: 600;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #bedfbe0e;
+  transition: all 0.3s ease;
+}
+
+.botao-comprar button:hover{
+  transform: scale(0.98);
+  background: var(--corprimaria);
+  color: var(--corterciaria);
+}
 
 /* Elenco */
 
