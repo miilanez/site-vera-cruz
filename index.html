@@ -12,6 +12,9 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+    <!-- Link Swiper's Slider Main CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle-main.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -71,38 +74,24 @@
     <!--=========== Fim da Sessão Navbar ===========-->
 
     <!--=========== Início da Sessão Principal ===========-->
-    <section class="sessao principal flex-center" id="principal">
-        <div class="container-esquerdo flex-center">
-            <img src="assets/img/veracruz-arte.png">
-        </div>
-
-        <div class="container-central flex-center">
-            <p class="separador-principal">|</p>
-        </div>
-
-        <div class="container-direito flex-center">
-            <div class="jogos flex-center">
-                <div class="box-jogo ultimo-jogo flex-center">
-                    <h2 class="titulo-widget">Último Jogo</h2>
-                    <div class="jogo">
-                        <img src="assets/img/logos times/logo-veracruz-mini.png">
-                        <p class="versus"> 1-3 </p>
-                        <img src="assets/img/logos times/logo-ibis.png">
+    <section class="principal flex-center" id="principal">
+        <!-- Swiper -->
+        <div class="swiper mainSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider-main-img">
+                        <img src="assets/img/bg-slider.jpg">
                     </div>
-                    <p class="info-jogo"> 23/03 - 16h00 - Arena Pernambuco </p>
                 </div>
-                <div class="box-jogo proximo-jogo flex-center">
-                    <h2 class="titulo-widget">Próximo Jogo</h2>
-                    <div class="jogo">
-                        <img src="assets/img/logos times/logo-veracruz-mini.png">
-                        <p class="versus"> vs </p>
-                        <img src="assets/img/logos times/logo-setedesetembro.png">
+                <div class="swiper-slide">
+                    <div class="slider-main-img">
+                        <img src="assets/img/bg-slider2.jpg">
                     </div>
-                    <p class="info-jogo"> 27/03 - 15h00 - Arena Pernambuco </p>
                 </div>
             </div>
-
-            <img class="jogador" src="assets/img/jogador-vera.png">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -111,7 +100,8 @@
     <!--=========== Início da Sessão Notícias ===========-->
 
     <section id="noticias">
-        <div class="sessao noticias">
+        <div class="sessao noticias flex-center">
+            <h1 class="titulo-sessao-01 flex-center">Últimas Notícias</h1>
             <div class="jornal flex-center">
                 <ul class="lista-de-noticias">
                     <li class="item-noticia">
@@ -121,15 +111,18 @@
                             </div>
                             <div class="texto-noticia">
                                 <h3> Vera Cruz enfrenta Sete de Setembro </h3>
-                                <p> Já rebaixado, Vera Cruz recebe o Sete de Setembro pela última rodada na Série A1.</p>
-                            <div class="botao-leia-mais">Leia Mais</div>
+                                <p> Já rebaixado, Vera Cruz recebe o Sete de Setembro pela última rodada na Série A1.
+                                </p>
+                                <div class="botao-leia-mais">Leia Mais</div>
                             </div>
                             <div class="noticia-modal flex-center">
                                 <div class="noticia-modal-body">
                                     <i class="fas fa-times modal-close-btn"></i>
                                     <img src="assets/img/noticias/vera cruz x sete.jpg">
                                     <h3> Vera Cruz se prepara para enfrentar Sete de Setembro </h3>
-                                    <p>Para cumprir tabela, o Vera Cruz recebe o Sete de Setembro no domingo, às 15h, na Arena de Pernambuco. Já o Íbis, visita o Afogados, no mesmo dia e horário, no estádio Vianão.</p>
+                                    <p>Para cumprir tabela, o Vera Cruz recebe o Sete de Setembro no domingo, às 15h, na
+                                        Arena de Pernambuco. Já o Íbis, visita o Afogados, no mesmo dia e horário, no
+                                        estádio Vianão.</p>
                                 </div>
                             </div>
                         </div>
@@ -141,17 +134,24 @@
                             </div>
                             <div class="texto-noticia">
                                 <h3> Vera Cruz perde para o Íbis e é rebaixado </h3>
-                                <p> O jogo aconteceu no último domingo (23/03) e o Vera Cruz precisava da vitória para seguir na Série A1.</p>
-                            <div class="botao-leia-mais">Leia Mais</div>
+                                <p> O jogo aconteceu no último domingo (23/03) e o Vera Cruz precisava da vitória para
+                                    seguir na Série A1.</p>
+                                <div class="botao-leia-mais">Leia Mais</div>
                             </div>
                             <div class="noticia-modal flex-center">
                                 <div class="noticia-modal-body">
                                     <i class="fas fa-times modal-close-btn"></i>
                                     <img src="assets/img/noticias/Originals/vera-cruz-rebaixado.jpg">
                                     <h3> O galo caiu! </h3>
-                                    <p> O Vera Cruz perdeu para o Íbis por 3 a 1 na Arena de Pernambuco e está rebaixado para a Série A2 do Estadual ainda na segunda rodada do quadrangular. Os gols do Pássaro Preto foram marcados por Matheusinho, Vitor Leão e Paulista. Vinícius Caveira descontou, mas não evitou a queda do Galo das Tabocas.</p>
+                                    <p> O Vera Cruz perdeu para o Íbis por 3 a 1 na Arena de Pernambuco e está rebaixado
+                                        para a Série A2 do Estadual ainda na segunda rodada do quadrangular. Os gols do
+                                        Pássaro Preto foram marcados por Matheusinho, Vitor Leão e Paulista. Vinícius
+                                        Caveira descontou, mas não evitou a queda do Galo das Tabocas.</p>
 
-                                    <p>O Vera Cruz retorna à Série A2 depois de dois anos. No quadrangular do rebaixamento, a equipe perdeu por 3 a 0 para o Afogados e 3 a 1 para o Íbis. Já na primeira fase, foram cinco derrotas em nove jogos, com três empates e apenas uma vitória.</p>
+                                    <p>O Vera Cruz retorna à Série A2 depois de dois anos. No quadrangular do
+                                        rebaixamento, a equipe perdeu por 3 a 0 para o Afogados e 3 a 1 para o Íbis. Já
+                                        na primeira fase, foram cinco derrotas em nove jogos, com três empates e apenas
+                                        uma vitória.</p>
                                 </div>
                             </div>
                         </div>
@@ -163,15 +163,17 @@
                             </div>
                             <div class="texto-noticia">
                                 <h3> Galo encerra preparações para jogo decisivo contra o Íbis </h3>
-                                <p> Nesta sexta-feira, o Vera Cruz treinou pela última vez, visando o duelo diante do Íbis, no domingo.</p>
-                            <div class="botao-leia-mais">Leia Mais</div>
+                                <p> Nesta sexta-feira, o Vera Cruz treinou pela última vez, visando o duelo diante do
+                                    Íbis, no domingo.</p>
+                                <div class="botao-leia-mais">Leia Mais</div>
                             </div>
                             <div class="noticia-modal flex-center">
                                 <div class="noticia-modal-body">
                                     <i class="fas fa-times modal-close-btn"></i>
                                     <img src="assets/img/noticias/treino vera cruz.jpg">
                                     <h3> Galo encerra preparações para jogo decisivo contra o Íbis </h3>
-                                <p> Nesta sexta-feira, o Vera Cruz treinou pela última vez, visando o duelo diante do Íbis, no domingo.</p>
+                                    <p> Nesta sexta-feira, o Vera Cruz treinou pela última vez, visando o duelo diante
+                                        do Íbis, no domingo.</p>
                                 </div>
                             </div>
                         </div>
@@ -183,15 +185,17 @@
                             </div>
                             <div class="texto-noticia">
                                 <h3> Após derrota, Vera Cruz volta aos treinamentos</h3>
-                                <p> Galo inciou suas preparações para enfrentar a equipe do Íbis neste fim de semana. Jogo é decisivo.</p>
-                            <div class="botao-leia-mais">Leia Mais</div>
+                                <p> Galo inciou suas preparações para enfrentar a equipe do Íbis neste fim de semana.
+                                    Jogo é decisivo.</p>
+                                <div class="botao-leia-mais">Leia Mais</div>
                             </div>
                             <div class="noticia-modal flex-center">
                                 <div class="noticia-modal-body">
                                     <i class="fas fa-times modal-close-btn"></i>
                                     <img src="assets/img/noticias/treino vera cruz 2.jpg">
                                     <h3> Após derrota, Vera Cruz volta aos treinamentos</h3>
-                                    <p> Galo inciou suas preparações para enfrentar a equipe do Íbis neste fim de semana. Jogo é decisivo.</p>
+                                    <p> Galo inciou suas preparações para enfrentar a equipe do Íbis neste fim de
+                                        semana. Jogo é decisivo.</p>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +203,7 @@
                 </ul>
             </div>
         </div>
-    
+
     </section>
     <div class="hr"></div>
     <!--=========== Fim da Sessão Notícias ===========-->
@@ -217,7 +221,8 @@
                                 <img src="assets/img/loja/uniforme1-2022.png">
                                 <h3> Uniforme I 2022 </h3>
                                 <h1>R$ 100,00</h1>
-                                <div class="botao-comprar"><a href="#" target="_blank" rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
+                                <div class="botao-comprar"><a href="#" target="_blank"
+                                        rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
                             </div>
                         </li>
                         <li class="item-loja">
@@ -225,7 +230,8 @@
                                 <img src="assets/img/loja/veracruz-uniforme1-2021.png">
                                 <h3> Uniforme I 2021 </h3>
                                 <h1>R$ 90,00</h1>
-                                <div class="botao-comprar"><a href="#" target="_blank" rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
+                                <div class="botao-comprar"><a href="#" target="_blank"
+                                        rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
                             </div>
                         </li>
                         <li class="item-loja">
@@ -233,7 +239,8 @@
                                 <img src="assets/img/loja/veracruz-uniforme2-2021.png">
                                 <h3> Uniforme II 2021 </h3>
                                 <h1>R$ 90,00</h1>
-                                <div class="botao-comprar"><a href="#" target="_blank" rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
+                                <div class="botao-comprar"><a href="#" target="_blank"
+                                        rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
                             </div>
                         </li>
                         <li class="item-loja">
@@ -241,7 +248,8 @@
                                 <img src="assets/img/loja/bone-vera-cruz.jpg">
                                 <h3> Boné Vera Cruz </h3>
                                 <h1>R$ 50,00</h1>
-                                <div class="botao-comprar"><a href="#" target="_blank" rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
+                                <div class="botao-comprar"><a href="#" target="_blank"
+                                        rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
                             </div>
                         </li>
                         <li class="item-loja">
@@ -249,7 +257,8 @@
                                 <img src="assets/img/camisa-vera-1.png">
                                 <h3> Uniforme I 2022 </h3>
                                 <h1>R$ 100,00</h1>
-                                <div class="botao-comprar"><a href="#" target="_blank" rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
+                                <div class="botao-comprar"><a href="#" target="_blank"
+                                        rel="noopener noreferrer"><button> Comprar Produto </button></a> </div>
                             </div>
                         </li>
                     </ul>
@@ -460,6 +469,9 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Main Slider JS -->
+    <script src="assets/js/swiper-bundle-main.min.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/script.js"></script>

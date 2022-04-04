@@ -1,6 +1,20 @@
+// Swiper Slider Main //
+
+var swiperMain = new Swiper(".mainSlider", {
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 // Initialize Swiper //
 
-var swiper = new Swiper(".mySwiper", {
+var swiperElenco = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 30,
     slidesPerGroup: 3,

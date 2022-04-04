@@ -18,6 +18,7 @@
 /* Corpo da página */
 body {
     background: var(--corprimaria);
+    background-image: url(/assets/img/bg-redtexture.png);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -28,7 +29,7 @@ header .header-topo {
     background-color: var(--corsecundaria);
     background-image: url(/assets/img/bg-blacktexture.png);
     width: 100%;
-    height: 80px;
+    height: 100px;
     padding: 3px 50px;
     display: flex;
     flex-direction: row;
@@ -36,7 +37,7 @@ header .header-topo {
     align-items: center;
 }
 
-.header-topo .logo{
+.header-topo .logo {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -44,10 +45,10 @@ header .header-topo {
 }
 
 .header-topo .logo img {
-    height: 65px;
+    height: 75px;
 }
 
-.header-topo .logo-nome a{
+.header-topo .logo-nome a {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -153,19 +154,20 @@ nav .menu-button i {
     justify-content: center;
     align-items: center;
 }
-  
+
 .flex-text-center {
     text-align: center;
 }
-  
+
 .sessao {
     position: relative;
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem 2rem 2rem; /* 6rem 2rem 2rem */
+    padding: 2rem 2rem 2rem;
+    /* 6rem 2rem 2rem */
 }
-  
+
 .sub-sessao {
     position: relative;
     max-width: 1300px;
@@ -173,16 +175,16 @@ nav .menu-button i {
     margin-right: auto;
     padding: 6rem 0;
 }
-  
+
 .titulo-sessao-01 {
-    
+
     font-size: 4.5em;
     font-weight: 800;
     margin-bottom: 2rem;
     color: var(--corterciaria);
 }
-  
-.container{
+
+.container {
     position: relative;
     flex-direction: column;
 }
@@ -196,86 +198,32 @@ body .hr {
 /* Sessão Principal */
 
 .principal {
-    background-image: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)100%), url(/assets/img/bg-arena-pe.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     max-width: 100%;
-    height: 80vh;
-    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 25%);
-    padding: 5rem 2rem 10rem 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    background: var(--corprimaria);
+    background-image: url(/assets/img/bg-redtexture.png);
 }
 
-.container-esquerdo img{
-    max-width: 80%;
+/* Main Slider Principal */
+
+.principal .swiper {
+    width: 100%;
+    height: 100%;
 }
 
-.container-central .separador-principal {
-    font-size: 5rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.479)
+.principal .swiper .swiper-pagination {
+    color: white;
 }
 
-.container-direito {
-    display: flex;
-    flex-direction: row-reverse;
+.principal .swiper-slide {
+    background: rgba(0, 0, 0, .45);
+    padding: 0;
 }
 
-.jogador {
-    max-height: 450px;
-}
-
-.jogos {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-direito .box-jogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: #130001ab;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
-    border-radius: 5px;
-    margin: 20px;
-    width:82%;
-}
-
-.box-jogo .jogo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 0.7rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-image: url(/assets/img/campo-futebol.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
+.principal .swiper-slide img {
     
-}
-
-.box-jogo .titulo-widget {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: var(--corterciaria);
-}
-
-.jogo .versus {
-    font-size: 2.5rem;
-    color: var(--corterciaria);
-}
-
-.jogo img {
-    width: 20%;
-}
-
-.box-jogo .info-jogo {
-    font-size: 1em;
-    color: var(--corterciaria);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Notícias */
@@ -284,6 +232,11 @@ body .hr {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
 }
 
 .noticias .jornal {
@@ -330,7 +283,7 @@ body .hr {
 }
 
 .botao-leia-mais {
-    
+
     font-size: 1.2em;
     cursor: pointer;
 }
@@ -425,12 +378,13 @@ body .hr {
     box-shadow: #000000;
     min-height: 345px;
 }
+
 /* .item-card img {
     height: 100%;
     width: 100%;
 }*/
 
-.item-card > img {
+.item-card>img {
     max-width: 100%;
 }
 
@@ -444,30 +398,30 @@ body .hr {
     margin-bottom: 20px;
 }
 
-.botao-comprar button{
-  color: var(--corprimaria);
-  font-weight: 600;
-  margin: 0 10px;
-  padding: 5px 10px;
-  font-size: 1.1em;
-  cursor: pointer;
-  border-radius: 6px;
-  outline: none;
-  border: none;
-  background: #bedfbe0e;
-  transition: all 0.3s ease;
+.botao-comprar button {
+    color: var(--corprimaria);
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: #bedfbe0e;
+    transition: all 0.3s ease;
 }
 
-.botao-comprar button:hover{
-  transform: scale(0.98);
-  background: var(--corprimaria);
-  color: var(--corterciaria);
+.botao-comprar button:hover {
+    transform: scale(0.98);
+    background: var(--corprimaria);
+    color: var(--corterciaria);
 }
 
 /* Elenco */
 
 #elenco {
-    
+
     width: 100%;
     margin-bottom: 50px;
 }
@@ -481,7 +435,7 @@ body .hr {
     padding: 1rem;
     text-align: center;
     font-size: 18px;
-    background-color:#130001ab;
+    background-color: #130001ab;
 
     display: flex;
     flex-direction: column;
@@ -504,7 +458,7 @@ body .hr {
 .footer-bg {
     background-image: url(/assets/img/torcida-bg.png);
     background-position: center;
-    
+
 }
 
 .footer-bg h1 {
@@ -537,7 +491,7 @@ footer {
     color: var(--corterciaria);
 }
 
-footer .hr{
+footer .hr {
     width: 100%;
     height: 2px;
     background: #f8f5f550;
