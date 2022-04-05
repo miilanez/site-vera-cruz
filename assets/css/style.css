@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
     /* declarando variáveis para uso posterior*/
@@ -337,15 +337,140 @@ body .hr {
     margin-bottom: 10px;
 }
 
-.eapps-instagram-feed-title-container {
+/* Jogos e Calendário */
+
+.calendario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.jogos-e-calendario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.container-esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-esquerdo .proxima-partida{
+    width: 100%;
+    padding: 2rem 4rem;
+    margin: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/bg-ilhadoretiro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-esquerdo .ultima-partida{
+    width: 100%;
+    padding: 2rem 4rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/bg-arena-pe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-partida {
+    text-transform: uppercase;
+    color: var(--corterciaria);
+    margin-bottom: 10px;
+}
+
+.partida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.partida img {
+    width: 70px;
+}
+
+.partida .versus {
+    color: var(--corterciaria);
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.descricao-partida {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    text-transform: uppercase;
     color: var(--corterciaria);
 }
 
-.noticias .eapps-link {
-    display: none !important;
+.container-direito {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
 }
 
-/* Jogos */
+.container-direito .container-partidas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-partidas h1 {
+    color: var(--corterciaria);
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.container-direito .ultimas-partidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.jogo {
+    background:#5F00041a; 
+}
+
+.jogo .descricao-partida-passada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.jogo .partida-passada {
+    background: var(--corterciaria);
+    min-height: 70px;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jogo .partida-passada img {
+    height: 30px;
+}
 
 /* Loja */
 #loja-virtual {
@@ -353,6 +478,7 @@ body .hr {
     background-image: url(/assets/img/bg-blacktexture.png);
     background-position: center;
     max-width: 100%;
+    padding-bottom: 5rem;
 }
 
 .loja .container .conteudo {
