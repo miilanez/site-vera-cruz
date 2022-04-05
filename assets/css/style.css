@@ -368,7 +368,7 @@ body .hr {
 
 .container-esquerdo .proxima-partida{
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
     margin: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/bg-ilhadoretiro.png);
     background-size: cover;
@@ -382,7 +382,7 @@ body .hr {
 
 .container-esquerdo .ultima-partida{
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/bg-arena-pe.jpg);
     background-size: cover;
     background-position: center;
@@ -451,7 +451,7 @@ body .hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 
 .jogo {
@@ -621,7 +621,7 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     max-width: 1300px;
     padding: 1rem 1rem;
@@ -676,7 +676,14 @@ footer .hr {
     text-transform: uppercase;
 }
 
+.menu-sobre a:hover {
+    color: var(--corprimaria);
+
+}
+
 .patrocinadores {
+    background: #000000;
+    padding-top: 3rem ;
     display: flex;
     flex-direction: column;
 }
@@ -694,7 +701,6 @@ footer .hr {
     margin: 30px;
     background-color: #5f000534;
     border-radius: 5px;
-    padding: 1rem;
     opacity: 0.6;
 }
 
@@ -716,8 +722,28 @@ footer .hr {
     transition: all 0.3s ease;
 }
 
+.redes-sociais-footer ul i:hover {
+    color: var(--corprimaria);
+}
+
 .footer-copyright {
     margin-top: 20px;
     margin-bottom: 10px;
     color: var(--corterciaria);
+}
+
+@media screen and (max-width: 980px) {
+    .seja-socio img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 889px) {
+    .container-direito .container-partidas h1{
+    font-size: 1.5em;    
+    }
+}
+
+@media screen and (max-width: 803px) {
+
 }
