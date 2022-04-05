@@ -176,12 +176,19 @@ nav .menu-button i {
     padding: 6rem 0;
 }
 
-.titulo-sessao-01 {
-
+.titulo-sessao {
+    text-transform: uppercase;
     font-size: 4.5em;
     font-weight: 800;
     margin-bottom: 2rem;
     color: var(--corterciaria);
+}
+
+.subtitulo-sessao {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--corsecundaria);
 }
 
 .container {
@@ -343,6 +350,7 @@ body .hr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 7rem;
 }
 
 .jogos-e-calendario {
@@ -547,9 +555,15 @@ body .hr {
 /* Elenco */
 
 #elenco {
-
     width: 100%;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-elenco {
+    display: flex;
+    flex-direction: column;
 }
 
 .swiper {
