@@ -733,17 +733,38 @@ footer .hr {
 }
 
 @media screen and (max-width: 980px) {
+    /* Header */
     .seja-socio img {
         display: none;
     }
 }
 
 @media screen and (max-width: 889px) {
+    /* Calendário e Jogos */
     .container-direito .container-partidas h1{
     font-size: 1.5em;    
     }
 }
 
-@media screen and (max-width: 803px) {
+@media screen and (max-width: 805px) {
+    /* Notícias */
+    .lista-de-noticias {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
 
+    /* Calendário e Jogos */
+    .jogos-e-calendario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-direito {
+        padding-top: 3rem;
+    }
+
+    /* Footer */
+
+    
 }
