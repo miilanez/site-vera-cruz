@@ -452,6 +452,7 @@ body .hr {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    padding-left: 5px;
 }
 
 .jogo {
@@ -595,16 +596,31 @@ body .hr {
 
 /* Footer */
 
-.footer-bg {
-    background-image: url(/assets/img/torcida-bg.png);
-    background-position: center;
-
+.patrocinadores {
+    background: #000000;
+    padding-top: 3rem ;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-bg h1 {
-    font-size: 6.4rem;
+.patrocinadores ul {
+    display: flex;
     align-items: center;
-    color: #5f000500;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.logos-patrocinadores img {
+    width: 165px;
+    height: 100px;
+    margin: 30px;
+    background-color: #5f000534;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.logos-patrocinadores img:hover {
+    opacity: 1;
 }
 
 footer {
@@ -668,44 +684,19 @@ footer .hr {
     flex-direction: column;
     align-items: center;
     margin: 10px 0 10px;
+    letter-spacing: 2px;
 }
 
 .menu-sobre a {
     color: var(--corterciaria);
     text-decoration: none;
     text-transform: uppercase;
+    margin: 2px 0 2px;
 }
 
 .menu-sobre a:hover {
     color: var(--corprimaria);
 
-}
-
-.patrocinadores {
-    background: #000000;
-    padding-top: 3rem ;
-    display: flex;
-    flex-direction: column;
-}
-
-.patrocinadores ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.logos-patrocinadores img {
-    width: 165px;
-    height: 100px;
-    margin: 30px;
-    background-color: #5f000534;
-    border-radius: 5px;
-    opacity: 0.6;
-}
-
-.logos-patrocinadores img:hover {
-    opacity: 1;
 }
 
 .redes-sociais-footer ul {
@@ -766,5 +757,42 @@ footer .hr {
 
     /* Footer */
 
+    .patrocinadores ul {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .logo-sobre {
+        max-width: 100%;
+    }
+
+    .menu-sobre {
+        margin: 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    /* Estilos para todas as Sessões */
+    .titulo-sessao {
+        font-size: 3em;
+    }
+
+    .subtitulo-sessao {
+        font-size: 1.7em;
+    }
+
+    /* Header / Nav-Menu */
+
+    header .header-topo {
+        justify-content: center;
+    }
+
+    .socio-sociais {
+        display: none;
+    }
     
+
 }
