@@ -93,6 +93,7 @@ header .hr {
 }
 
 nav {
+    background: var(--corprimaria);
     background-image: url(/assets/img/bg-redtexture.png);
     position: relative;
     display: flex;
