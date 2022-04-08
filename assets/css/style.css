@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
     /* declarando variáveis para uso posterior*/
@@ -12,14 +12,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 /* Corpo da página */
 body {
     background: var(--corprimaria);
     background-image: url(/assets/img/bg-redtexture.png);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Header / Nav-Menu */
@@ -49,15 +48,14 @@ header .header-topo {
 }
 
 .header-topo .logo-nome a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .header-topo .logo a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--corterciaria);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     margin-left: 13px;
 }
 
