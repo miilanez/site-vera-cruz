@@ -917,7 +917,7 @@ footer {
     /* Header / Nav-Menu */
 
     header .header-topo {
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .socio-sociais {
