@@ -926,6 +926,11 @@ footer {
 }
 
 @media screen and (max-width: 540px) {
+
+    header .header-topo {
+        padding: 3px 20px;
+    }
+
     .header-topo .logo-nome {
         display: flex;
         flex-direction: column;
