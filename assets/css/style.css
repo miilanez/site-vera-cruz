@@ -19,6 +19,7 @@ body {
     background: var(--corprimaria);
     background-image: url(/assets/img/bg-redtexture.png);
     font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header / Nav-Menu */
@@ -47,8 +48,15 @@ header .header-topo {
     height: 75px;
 }
 
-.header-topo .logo-nome a {
-    font-family: 'Oswald', sans-serif;
+.header-topo .logo-nome {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+
+.header-topo .logo-nome .logo-sobrenome-time {
+    display: flex;
+    flex-direction: row;
 }
 
 .header-topo .logo a {
@@ -131,20 +139,69 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-nav .menu-button {
-    align-items: center;
+
+.nav-menu-button {
     display: none;
+    align-items: center;
 }
 
-nav .menu-button i {
-    color: var(--corterciaria);
-    font-size: 22px;
+.nav-menu-button .icon {
+    position: relative;
+    height: 65px;
+    width: 65px;
+    border-radius: 6px;
     cursor: pointer;
-    align-items: center;
+    margin: 0 8px;
+    transition: all 0.3s ease;
 }
 
-#click {
-    display: none;
+.box .icon.active {
+    background: #FF676D;
+}
+
+.box .icon.line.active {
+    background: #FFF;
+}
+
+.icon i {
+    position: absolute;
+    font-size: 50px;
+    left: 50%;
+    top: 50%;
+    color: var(--corterciaria);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.icon.active i {
+    color: var(--corterciaria)
+}
+
+.icon.line.active i {
+    color: #333;
+}
+
+.icon i.close {
+    opacity: 0;
+}
+
+.icon.active i.close {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.icon.active i.open {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.icon.line.active i.close {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.icon.line.active i.open {
+    transform: translate(-50%, -50%) rotate(0deg);
 }
 
 /* Estilos para todas as Sessões */
@@ -736,7 +793,7 @@ footer {
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1131px) {
     /* Header */
     .seja-socio img {
         display: none;
@@ -750,7 +807,61 @@ footer {
     }
 }
 
+@media screen and (max-width: 829px) {
+    .header-topo .logo a {
+        font-weight: 300;
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 805px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Header e NavBar */
+    
+    .redes-sociais ul i {
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    
+    nav {
+        height: 0.1px;
+    }
+
+    .nav-links {
+        z-index: 99999;
+        display: fixed;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 50vw;
+        height: 50vh;
+        padding: 2rem;
+        border-left: 4px solid #000000;
+        border-bottom: 4px solid #000000;
+        background-color: var(--corprimaria);
+        background-image: url(/assets/img/bg-redtexture.png);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links .separador {
+        display: none;
+    }
+
+    .nav-menu-button {
+        display: block;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
     /* Notícias */
     .lista-de-noticias {
         display: flex;
@@ -787,6 +898,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 729px) {
+    .redes-sociais {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 675px) {
     /* Estilos para todas as Sessões */
     .titulo-sessao {
@@ -806,6 +923,21 @@ footer {
     .socio-sociais {
         display: none;
     }
-    
+}
 
+@media screen and (max-width: 540px) {
+    .header-topo .logo-nome {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-topo .logo-nome .logo-sobrenome-time {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .header-topo .logo-nome {
+        display: none;
+    }
 }

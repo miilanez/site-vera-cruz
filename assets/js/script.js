@@ -53,3 +53,48 @@ modalCLoseBotaos.forEach((modalCLoseBotao) => {
         })
     })
 })
+
+// menu hamburger style
+
+let menuBtn = document.querySelectorAll(".nav-menu-button");
+for (var i = 0; i < menuBtn.length; i++) {
+    menuBtn[i].addEventListener("click", (e) => {
+        console.log(e.target);
+        e.target.classList.toggle("active");
+    });
+}
+
+// Navbar responsiva
+
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(".nav-menu-button");
+        this.navList = document.querySelector(".nav-links");
+        this.navLinks = document.querySelectorAll(".nav-links li");
+        this.activeClass = "active";
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+    }
+
+    addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+
+    init() {
+        if (this.mobileMenu) {
+            this.addClickEvent();
+        }
+        return this;
+    }
+}
+
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+);
+mobileNavbar.init();
