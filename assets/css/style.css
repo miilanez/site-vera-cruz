@@ -446,6 +446,7 @@ body .hr {
     color: var(--corterciaria);
     text-transform: uppercase;
     font-size: 2em;
+    font-weight: 300;
     margin-bottom: 1rem;
 }
 
