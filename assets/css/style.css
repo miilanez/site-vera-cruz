@@ -111,6 +111,7 @@ nav {
 }
 
 nav ul {
+    top: 8px;
     display: flex;
     flex-wrap: wrap;
     color: var(--corterciaria);
@@ -119,6 +120,7 @@ nav ul {
 nav ul li {
     list-style: none;
     margin: 0 20px;
+    
 }
 
 nav ul li a {
@@ -126,6 +128,7 @@ nav ul li a {
     color: var(--corterciaria);
     font-size: 17px;
     font-weight: 300;
+    top: 8px;
     letter-spacing: 2px;
     padding: 6px 0;
     text-decoration: none;
@@ -137,8 +140,12 @@ nav ul li a:hover {
     transition: all 0.3s ease;
     color: var(--corsecundaria);
     font-weight: 700;
+    text-decoration: none;
 }
 
+nav ul li div{
+    top: 8px;
+}
 
 .nav-menu-button {
     display: none;
@@ -271,25 +278,30 @@ body .hr {
 
 /* Main Slider Principal */
 
-.principal .swiper {
+/* Slider */
+
+.carousel-inner {
     width: 100%;
-    height: 100%;
 }
 
-.principal .swiper .swiper-pagination {
-    color: white;
+.slider-img {
+    position: relative;
 }
 
-.principal .swiper-slide {
-    background: rgba(0, 0, 0, .45);
-    padding: 0;
-}
-
-.principal .swiper-slide img {
-    
-    width: 100%;
-    height: 100%;
+.slider-img img {
     object-fit: cover;
+    object-position: center middle;
+    min-height: 40vh;
+    max-height: 70vh;
+}
+
+.slider-conteudo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Notícias */
@@ -519,6 +531,10 @@ body .hr {
     background:#5F00041a; 
 }
 
+.jogo p {
+    margin-top: 14px;
+}
+
 .jogo .descricao-partida-passada {
     display: flex;
     flex-direction: row;
@@ -556,7 +572,7 @@ body .hr {
 
 .lista-de-itens {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
     max-width: 100%;
     margin: 0 auto;
     gap: 20px;

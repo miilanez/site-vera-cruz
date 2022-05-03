@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=========== Referências ===========-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Link Swiper's CSS -->
@@ -68,36 +69,49 @@
         <div class="hr"></div>
         <nav>
                 <ul class="nav-links">
-                    <li><a href="#principal">Início</a></li><div class="separador">|</div>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">O Clube</a></li><div class="separador">|</div>
-                    <li><a href="#calendario">Jogos</a></li><div class="separador">|</div>
-                    <li><a href="#loja-virtual">Loja</a></li><div class="separador">|</div>
+                    <li><a href="#principal">Início</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">O Clube</a></li>
+                    <li><a href="#calendario">Jogos</a></li>
+                    <li><a href="#loja-virtual">Loja</a></li>
                     <li><a href="#" target="_blank" rel="noopener noreferrer">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <div class="hr"></div>
     <!--=========== Fim da Sessão Navbar ===========-->
 
     <!--=========== Início da Sessão Principal ===========-->
+
     <section class="principal flex-center" id="principal">
-        <!-- Swiper -->
-        <div class="swiper mainSlider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider-main-img">
-                        <img src="assets/img/bg-slider.jpg">
+        <!-- Slider -->
+        <div class="container-slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-img">
+                            <img class="d-block w-100" src="assets/img/bg-slider.jpg" alt="First slide">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-img">
+                            <img class="d-block w-100" src="assets/img/bg-slider2.jpg" alt="Second slide">
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider-main-img">
-                        <img src="assets/img/bg-slider2.jpg">
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
         </div>
     </section>
     <div class="hr"></div>
@@ -591,6 +605,10 @@
 
     <!-- Main JS -->
     <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!--=========== Fim do Footer===========-->
 </body>
