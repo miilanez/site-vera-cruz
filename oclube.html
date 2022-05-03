@@ -1,12 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=========== Referências ===========-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Link Swiper's Slider Main CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle-main.min.css">
+
+    <!-- Link Pacotes de Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Link Pacotes de Ícones -->
+    <script src="http://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/1f8400133f.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
     <title>O Clube</title>
 </head>
+
 <body>
-    <h1>Página falando sobre o clube</h1>
+    <!--=========== Início da Sessão Navbar ===========-->
+    <header>
+        <div class="header-topo">
+            <div class="logo">
+                <div class="logo-escudo">
+                    <a href="#"><img src="assets/img/veracruz-logo.png" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+                <div class="logo-nome">
+                    <a class="logo-nome-time" href="#">Vera Cruz</a>
+                    <a class="logo-sobrenome-time" href="#">Futebol CLube</a>
+                </div>
+            </div>
+            <div class="socio-sociais flex-center">
+                <div class="seja-socio">
+                    <img src="assets/img/banner-socio.png">
+                </div>
+                <div class="redes-sociais">
+                    <ul>
+                        <li><a href="https://www.instagram.com/miilanez/" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/mr_milanez" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/miilanez" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-menu-button">
+                <div class="icon">
+                    <i class='bx bx-menu open'></i>
+                    <i class='bx bx-x close'></i>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="oclube.html">O Clube</a></li>
+                <li><a href="#calendario">Jogos</a></li>
+                <li><a href="#loja-virtual">Loja</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Contato</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="hr"></div>
+    <!--=========== Fim da Sessão Navbar ===========-->
+
+    <!--=========== Início da Sessão Principal ===========-->
+
+    <section class="sessao principal-o-clube flex-center" id="principal">
+        <div class="sobre-o-clube flex-center">
+
+            <h1 class="titulo-sessao">O Clube</h1>
+
+            <img class="img-logo" src="assets/img/veracruz-logo.png" alt="Logo do Vera Cruz">
+
+            <p>
+                O Vera Cruz Futebol Clube (conhecido apenas por Vera Cruz ou Verinha), é uma agremiação esportiva
+                brasileira fundada a 3 de fevereiro de 1960. Com sede na cidade de Vitória de Santo Antão em Pernambuco.
+                O Tricolor do Povo, tem como mascote o galo e suas cores são vermelho, preto e branco. O Vera Cruz
+                possui 4 títulos da 2ª Divisão Pernambucana, sendo o único tetracampeão da segundona. As conquistas do
+                Tricolor do Povo foram nos anos de 2006, 2009, 2014 e 2020, sendo o maior campeão da Série A2.
+            </p>
+            <p>
+                Por problemas de cunho político, desde 2017 não atua em sua cidade, além disso, o Estádio Carneirão, em
+                Vitória de Santo Antão encontra-se abandonado e interditado. Nas temporadas 2017 e 2018, mandou seus
+                jogos no Estádio Gonzagão, na cidade de Feira Nova, distante 36 km Vitória de Santo Antão. Atualmente o
+                clube está mandando seus jogos na Arena de Pernambuco, na cidade de São Lourenço da Mata, à 53 km de
+                Vitória de Santo Antão.
+            </p>
+        </div>
+
+        <div class="historia flex-center">
+
+            <h1 class="sub-titulo-sessao">História</h1>
+            <p>
+                Fundado em 3 de fevereiro de 1960, o clube inicialmente sempre disputou as ligas amadoras. O Vera
+                Cruz teve como fundadores os saudosos Artur Cirino de Carvalho, Simeão Francisco de Lima, José Rodrigues
+                da Silva, José Paulino de Medeiros, Manoel Maximiano da Silva, Milton Correia Teixeira e Antônio Luiz de
+                Carvalho. No mesmo ano em que foi criado, o time participou da criação da Liga Vitoriense de Desportos,
+                sempre estando presente aos campeonatos locais, jogos amistosos, torneios, mesmo após a extinção da
+                Liga.
+            </p>
+            <p>
+                Em 1983, o Vera Cruz foi convidado pela Liga Vitoriense de Desportos para participar do Campeonato da
+                Liga. Em 2001, quando voltou a participar do Campeonato da Liga foi novamente campeão. Em 30 de setembro
+                de 2002, o Vera Cruz, ao sagrar-se campeão da Copa Intermunicipal de Clubes Campeões,
+                profissionalizou-se para disputar a Segunda Divisão do Campeonato Pernambucano de Futebol.
+            </p>
+            <p>
+                Em 2006, venceu o Campeonato Pernambucano da Segunda Divisão, e no ano seguinte, estreou no Campeonato
+                Pernambucano da 1ª Divisão, onde permaneceu até a edição de 2008, ano do seu primeiro rebaixamento na
+                primeira divisão. Já no ano seguinte, na edição de 2009 da segunda divisão, volta a sagrar-se campeão e
+                volta mais uma vez a elite do futebol de Pernambuco, onde permaneceu no ano seguinte e teve seu segundo
+                rebaixamento, até a temporada de 2014, onde sagra-se campeão e volta outra vez a primeira divisão. Mas,
+                infelizmente no ano seguinte, volta a ser rebaixado para a segunda divisão do campeonato pernambucano,
+                totalizando três rebaixamentos em sua história. Porém, na temporada 2020 o Galo do Maués volta a
+                levantar a taça da Série A2 e retorna a elite do futebol pernambucano.
+            </p>
+            <p>
+                No seu retorno à Série A1, o Vera Cruz passou boa parte da fase inicial brigando contra o rebaixamento
+                novamente, mas conseguiu escapar do quadrangular final do descenso e disputou as quartas de final, onde
+                foi eliminado pelo Salgueiro.
+            </p>
+        </div>
+
+        <div class="estrutura-do-clube flex-center">
+
+            <h1 class="sub-titulo-sessao">Estádio</h1>
+
+            <img class="img-estadio" src="assets/img/o clube/bg-arena-pe.jpg" alt="Arena Pernambuco">
+
+            <p>
+                O Estádio Municipal Severino Cândido Carneiro, mais conhecido como Carneirão, que está localizado no
+                bairro Lídia Queiroz, PE – 045, Vitória de Santo Antão em Pernambuco e possui capacidade para 10.911
+                espectadores é o estádio tradicionalmente utilizado pelo Vera Cruz e seu rival Vitória das Tabocas,
+                porém, atualmente, ambos mandam seus jogos na Arena de Pernambuco, em São Lourenço da Mata que possui
+                44.300 cadeiras.
+            </p>
+
+            <h1 class="sub-titulo-sessao">Centro de Treinamento</h1>
+            <p>
+                Possui o seu complexo esportivo (Centro de Treinamento) numa área carente da cidade, no bairro do Maués,
+                em Vitória de Santo Antão, com o objetivo também de realizar um trabalho social de atendimento às
+                crianças da comunidade.
+
+                O complexo Antônio Luiz de Carvalho possui dois campos para treinamentos de atletas das categorias de
+                base, além de piscina e sala de musculação.
+            </p>
+
+        </div>
+    </section>
+
+    <!--=========== Fim da Sessão Principal ===========-->
+
+    <!--=========== Início do Footer ===========-->
+
+    <div class="hr"></div>
+
+    <div class="patrocinadores flex-center">
+        <h3 class="titulo-sessao">Patrocinadores</h3>
+        <div class="logos-patrocinadores">
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/img/logos-patrocinadores/haras_pitu-165x80.png"></a></li>
+
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/img/logos-patrocinadores/pratic-sport-400x117.png"></a></li>
+
+                <li><a href="#" target="_blank" rel="noopener noreferrer"><img
+                            src="assets/img/logos-patrocinadores/unifacol-280x72.png"></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer-container flex-center">
+
+            <div class="sobre">
+                <div class="logo-sobre flex-center">
+                    <img src="assets/img/logos times/logo-veracruz-mini.png">
+                    <h3>VERA CRUZ FUTEBOL CLUBE</h3>
+                </div>
+            </div>
+
+            <div class="menu-sobre">
+                <a href="#" target="_blank" rel="noopener noreferrer">O Clube</a>
+                <a href="#calendario">Jogos</a>
+                <a href="#loja-virtual">Loja</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Contato</a>
+            </div>
+
+            <div class="redes-sociais-footer">
+                <h3 class="footer-titulo">Siga-nos nas Redes Sociais</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/miilanez/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/mr_milanez" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/miilanez" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-copyright flex-center">
+            <p>Copyright &copy; 2022 by Gabriel Milanez. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Main Slider JS -->
+    <script src="assets/js/swiper-bundle-main.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--=========== Fim do Footer===========-->
 </body>
+
 </html>

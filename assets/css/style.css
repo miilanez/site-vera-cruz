@@ -81,6 +81,7 @@ header .header-topo {
 }
 
 .redes-sociais ul i {
+    padding-top: 15px;
     color: var(--corterciaria);
     margin: 20px;
     font-size: 1.5em;
@@ -807,6 +808,38 @@ footer {
     color: var(--corterciaria);
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+/* Pagina - O clube */
+
+/* Página */
+
+.principal-o-clube {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.principal-o-clube p{
+    color: var(--corterciaria);
+}
+
+.sobre-o-clube, .historia, .estrutura-do-clube {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal-o-clube .img-logo {
+    width: 300px;
+    margin: 20px;
+}
+
+.principal-o-clube .img-estadio {
+    width: 100%;
+    margin: 20px;
+    border-bottom: 10px solid var(--corsecundaria);
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 1131px) {
