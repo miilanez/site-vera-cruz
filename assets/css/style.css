@@ -446,7 +446,7 @@ body .hr {
     width: 100%;
     padding: 1rem 2rem;
     margin: 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/bg-ilhadoretiro.png);
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/backgrounds/bg-ilhadoretiro.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -459,7 +459,7 @@ body .hr {
 .container-esquerdo .ultima-partida{
     width: 100%;
     padding: 1rem 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/bg-arena-pe.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)100%), url(/assets/img/backgrounds/bg-arena-pe.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
